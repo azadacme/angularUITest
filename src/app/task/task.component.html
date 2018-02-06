@@ -1,0 +1,19 @@
+
+  <div class="row">
+    <table class="table table-striped">
+      <thead class="table table-striped">
+        <tr>
+           <th>Title</th>
+           <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let key of arrayOfKeys">
+            <td>{{taskList[key].title.stringValue}}</td>
+            <td>{{taskList[key].description.stringValue }}</td>
+          </tr>
+      </tbody>
+    </table>
+    <app-create-task></app-create-task>
+  </div>
+
